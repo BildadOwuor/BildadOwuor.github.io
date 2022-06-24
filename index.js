@@ -5,6 +5,7 @@ $(document).ready(function(){
 function dateFunction() {
     var timestamp = new Date();
     var utcDate = timestamp.toLocaleDateString();
+    $("<p> ${utcDate} </p>").appendTo("body");
 };
 
 dateFunction();
