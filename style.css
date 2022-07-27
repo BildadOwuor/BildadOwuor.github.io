@@ -12,3 +12,7 @@ body{
 .lin{
     size: 50%;
 }
+.round{
+    border-radius: 25px;
+    border: 10px solid white;
+}
