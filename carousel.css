@@ -3,7 +3,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  color: #161515;
 }
 
 
@@ -13,12 +13,12 @@ body {
 
 .carousel-caption {
   bottom: 3rem;
-  z-index: 10;
-  color: black;
+  z-index: 20;
 }
 
 .carousel-item {
   height: 32rem;
+  opacity: 100%;
 }
 
 
