@@ -16,3 +16,17 @@ body{
     border-radius: 25px;
     border: 10px solid white;
 }
+
+.background{
+    background-image: url(./images/courasel3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 500px;
+    width: 98%;
+    }
+
+    .black-text{
+        text-decoration-color: black !important;
+    }
