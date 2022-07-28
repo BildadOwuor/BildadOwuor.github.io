@@ -41,3 +41,7 @@ body{
     .space{
         height: 30px;
     }
+    .background-grey{
+        background-color: grey;
+        opacity: 10;
+    }
