@@ -8,9 +8,10 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./carousel.css">
     <link rel="stylesheet" href="./carousel.rtl.css">
+    <link rel="icon" href="/assets/img/favicons/favicon.ico">
+    <script src="https://kit.fontawesome.com/790e150ce5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,19 +35,21 @@
 <body class="container-fluid">
 
   <!-- Nav bar -->
+  <div class="container-fluid fixed-top bg-white nav">
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <span class="fs-4"> Bildad</span>
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="index.html#About" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="index.html#Projects" class="nav-link">My Skills</a></li>
-        <li class="nav-item"><a href="index.html#Contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#About" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#Projects" class="nav-link">My Skills</a></li>
+        <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
       </ul>
     </header>
   </div>
+</div>
 <!-- Landing page / home page -->
 <div class="container col-xxl-8 px-4 py-5">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -58,14 +61,15 @@
       <p class="lead">I'm a Kenyan-based designer and developer of software products, 
         who creates clean and modern content for the world-wide web using JavaScript.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a href="https://www.linkedin.com/in/bildad-owuor"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</button></a>
+        <a href="https://www.linkedin.com/in/bildad-owuor" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</button></a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- About me -->
-<div id="myCarousel" class="carousel slide round background" data-bs-ride="carousel">
+<div id="About">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,31 +77,30 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <div class="transbox background round"></div>
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1 class="display-5 fw-bold text-white">About Me</h1>
-          <p class="lead mb-4 text-white">I believe software can change people's lives... <span>is that crazy?</span>
+          <h1 class="display-5 fw-bold text-black">About Me</h1>
+          <p class="lead mb-4 text-black">I believe software can change people's lives... <span>is that crazy?</span>
           </p>
-          <p><a class="btn btn-lg btn-primary" href="#">Get My CV</a></p>
+          <p><a class="btn btn-lg btn-primary" href="#" target="_blank">Get My CV</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+      <div class="transbox round graduation"></div>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Education Background</h1>
-          <p>I studied Bachelors of Science in Information Technology at <a href="https://www.tum.ac.ke/" class="tum text-white">Technical University of Mombasa</a></p>
-          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          <h1 class="text-black">Education Background</h1>
+          <p class="text-black">I studied Bachelors of Science in Information Technology at <a href="https://www.tum.ac.ke/" class="tum text-black">Technical University of Mombasa</a></p>
+          <p><a class="btn btn-lg btn-primary" href="#" target="_blank">Learn more</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+    <div class="funfact transbox round"></div>
       <div class="container">
-        <div class="carousel-caption text-end">
+        <div class="carousel-caption text-end text-black">
           <h1>One more thing...</h1>
           <p>I am a goal oriented, multitasker, flexible, honest and a good team player who can work under low supervision.</p>
         </div>
@@ -113,8 +116,10 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+</div>
 
 <!-- my skills -->
+<div id="Projects">
 <h1 class="center">My Skills</h1>
 <div class="space"></div>
 <div class="container marketing">
@@ -123,36 +128,37 @@
   <img src="./images/JavaScript-logo.png" alt="" srcset="" height="70px" width="60px">
     <h2 class="fw-normal">JavaScript</h2>
     <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-    <p><a class="btn btn-secondary" href="#">Projects &raquo;</a></p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
   </div>
   <div class="col-lg-4">
 <img src="./images/html-logo.png" alt="" srcset="" height="70px" width="60px">
     <h2 class="fw-normal">HTML</h2>
     <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-    <p><a class="btn btn-secondary" href="#">Projects &raquo;</a></p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
   </div>
   <div class="col-lg-4">
     <img src="./images/css-logo.png" alt="" srcset="" width="60px" height="70px">
     <h2 class="fw-normal">CSS</h2>
     <p>And lastly this, the third column of representative placeholder content.</p>
-    <p><a class="btn btn-secondary" href="#">Projects &raquo;</a></p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
   </div>
   <div class="col-lg-4">
     <img src="./images/flutterlogo.jpg" alt="" srcset="" width="70px" height="80px">
     <h2 class="fw-normal">Flutter Framework</h2>
     <p>And lastly this, the third column of representative placeholder content.</p>
-    <p><a class="btn btn-secondary" href="#">Projects &raquo;</a></p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
   </div>
   <div class="col-lg-4">
     <img src="./images/sql-logo.png" alt="" srcset="" width="60px" height="70px">
     <h2 class="fw-normal">SQL</h2>
     <p>And lastly this, the third column of representative placeholder content.</p>
-    <p><a class="btn btn-secondary" href="#">Projects &raquo;</a></p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
   </div>
 </div>
 </div>
+</div>
 <!-- Contact Me -->
-<div class="background-grey container-fluid round">
+<div class="background-grey container-fluid round" id="Contacts">
 <section class="mb-4 container text-white">
 
   <!--Section heading-->
@@ -229,15 +235,22 @@
       <!--Grid column-->
       <div class="col-md-3 text-center">
           <ul class="list-unstyled mb-0">
-              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
                   <p>Nairobi, Kenya</p>
               </li>
 
-              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
                   <p>+2547 0052 4820</p>
               </li>
 
-              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
                   <p>Bildadowuor@outlook.com <br> Bildadowuor@yahoo.com</p>
               </li>
           </ul>
@@ -262,9 +275,9 @@
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="https://twitter.com/Bildad0"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="http://www.facebook.com/IamBildad"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/Bildad0" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/iambildad" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="http://www.facebook.com/IamBildad" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
     </ul>
   </footer>
 </div>
